@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div style="display: flex; justify-content: space-around">
+      <span
+        >Time
+        <div id="timer">0</div>
+      </span>
+      <button id="highscore-btn" disabled>View Highscore</button>
+      <span
+        >Your Score
+        <div id="score">0</div></span
+      >
+    </div>
+
+    <button id="start-btn" class="start-btn display-btn">Start</button>
+
+    <div>
+      <div id="question-1" class="question-1-hide times-up">
+        <h1>
+          Which is a phrase of JavaScript that can be evaluated to produce a
+          value?
+        </h1>
+
+        <input id="radio1-question-1" type="radio" name="question-1" />
+        <label for="answerchoice1">Expression</label><br />
+
+        <input id="radio2-question-1" type="radio" name="question-1" />
+        <label for="answerchoice1">Statement</label><br />
+
+        <input id="radio3-question-1" type="radio" name="question-1" />
+        <label for="answerchoice1">Function</label><br />
+
+        <input id="radio4-question-1" type="radio" name="question-1" />
+        <label for="answerchoice1">IDK</label><br />
+
+        <button id="question-1-btn">Submit</button>
+      </div>
+
+      <div id="question-2" class="question-2-hide times-up">
+        <h1>
+          Which of the following is a set of elementary rules that specifies how
+          you write programs in a programming language.
+        </h1>
+
+        <input id="radio1-question-2" type="radio" name="question-2" />
+        <label for="answerchoice2">Lexical Structure</label><br />
+
+        <input id="radio2-question-2" type="radio" name="question-2" />
+        <label for="answerchoice2">Function</label><br />
+
+        <input id="radio3-question-2" type="radio" name="question-2" />
+        <label for="answerchoice2">Control Structure</label><br />
+
+        <input id="radio4-question-2" type="radio" name="question-2" />
+        <label for="answerchoice2">IDK</label><br />
+        <button id="question-2-btn">Submit</button>
+      </div>
+      <div id="question-3" class="question-3-hide times-up">
+        <h1>what is function defined in an object?</h1>
+
+        <input id="radio1-question-3" type="radio" name="question-3" />
+        <label for="answerchoice3">Method</label><br />
+
+        <input id="radio2-question-3" type="radio" name="question-3" />
+        <label for="answerchoice3">Falsy</label><br />
+
+        <input id="radio2-question-3" type="radio" name="question-3" />
+        <label for="answerchoice3">Statement</label><br />
+
+        <input id="radio2-question-3" type="radio" name="question-3" />
+        <label for="answerchoice3">IDK</label><br />
+        <button id="question-3-btn">Submit</button>
+      </div>
+      <div id="final-box" class="final-box-hide">
+        <h1>All done</h1>
+        <h3>Your Score: <label id="final-score"></label></h3>
+        <label>Name:</label
+        ><input id="name-box" type="text" placeholder="Enter your name" />
+        <button id="name-submit">Submit</button>
+      </div>
+
+      <div id="highScore"></div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
